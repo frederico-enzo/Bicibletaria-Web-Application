@@ -1,0 +1,89 @@
+h2{
+    margin-bottom: 50px;
+}
+
+p{
+    padding: 0px;
+    margin: 0px;
+}
+
+input{
+    border-radius: 5px;
+}
+
+button{
+    margin-top: 2vh;
+    width: 15vw;
+    font-size: 20px;
+}
+
+.fundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(204, 204, 204);
+}   
+.main{
+    padding: 20px;
+    border-radius: 7px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    width: 40vw;
+    height: 40vh;
+    border: 1px solid rgb(196, 195, 195);
+    box-shadow: 5px 5px 5px rgb(119, 119, 119);
+
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    width: calc(100% - 1rem);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
