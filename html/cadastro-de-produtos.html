@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro-de-produtos.css">
+    <title>Cadastro de Produtos</title>
+</head>
+
+<body>
+
+    <header class="d-flex">
+        <nav>
+            <ul>
+                <button id="home" class="btn">Dashboard</button>
+                <button class="btn">Ordem de Serviços</button>
+                <button class="btn">Ordem de Serviços</button>
+                <button class="btn">Ordem de Serviços</button>
+                <button class="btn">Ordem de Serviços</button>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="d-flex">
+        <main>
+            <h1 class="d-flex">Cadastro de Produtos</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="descricao">Descrição:</label>
+                    <input type="text" id="descricao" name="descricao" required>
+                </div>
+                <div class="form-group">
+                    <label for="imagem">Imagem:</label>
+                    <input type="file" id="imagem" name="imagem">
+                </div>
+                <div class="form-group">
+                    <label for="preco_venda">Preço de Venda:</label>
+                    <input type="number" id="preco_venda" name="preco_venda" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="preco_custo">Preço de Custo:</label>
+                    <input type="number" id="preco_custo" name="preco_custo" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="fabricante">Fabricante:</label>
+                    <input type="text" id="fabricante" name="fabricante">
+                </div>
+                <div class="form-group">
+                    <label for="categoria">Categoria:</label>
+                    <input type="text" id="categoria" name="categoria">
+                </div>
+                <div class="d-flex">
+                    <button class="btn-success" type="submit">Cadastrar Produto</button>
+                </div>
+            </form>
+        </main>
+    </section>
+    <script src="../javascript/cadastro-de-produtos.js"></script>
+</body>
+
+</html>
