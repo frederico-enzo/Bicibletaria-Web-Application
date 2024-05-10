@@ -157,7 +157,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .product-card img {
@@ -173,9 +173,11 @@ body {
 
 .product-card p {
     margin-bottom: 15px;
+
 }
 
 .add-to-cart {
+    width: 100%;
     padding: 10px 20px;
     background-color: rgb(29, 38, 154);
     color: #fff;
