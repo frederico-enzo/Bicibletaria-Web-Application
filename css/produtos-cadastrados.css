@@ -147,45 +147,37 @@ body {
     margin-bottom: 30px;
 }
 
-.form-container {
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
     background-color: #fff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-group input[type="text"],
-.form-group input[type="number"],
-.form-group select {
+.product-card img {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    margin-bottom: 15px;
 }
 
-.form-group select {
-    appearance: none;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%23333"><path d="M8.293 14.707a1 1 0 0 1-1.414 0L2.172 9.172A1 1 0 0 1 2.172 7.758l6.707-6.707a1 1 0 0 1 1.414 0l6.707 6.707a1 1 0 0 1-1.414 1.414L10 6.414l-5.293 5.293z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 20px;
-    padding-right: 40px;
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.form-group button {
+.product-card p {
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
     padding: 10px 20px;
-    background-color: rgb(88, 139, 92);
+    background-color: rgb(29, 38, 154);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -193,9 +185,10 @@ body {
     cursor: pointer;
 }
 
-.form-group button:hover {
-    background-color: rgb(75, 122, 75);
+.add-to-cart:hover {
+    background-color: rgb(39, 48, 174);
 }
+
 
 
 
