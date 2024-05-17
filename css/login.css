@@ -1,42 +1,44 @@
-h2{
-    margin-bottom: 50px;
+h2 {
+    margin-bottom: 30px;
+    color: #333;
 }
 
-p{
+p {
     padding: 0px;
     margin: 0px;
 }
 
-input{
+input {
     border-radius: 5px;
 }
 
-button{
+button {
     margin-top: 2vh;
-    width: 15vw;
+    width: 100%;
     font-size: 20px;
 }
 
-.fundo{
+.fundo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(204, 204, 204);
-}   
-.main{
-    padding: 20px;
-    border-radius: 7px;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    width: 40vw;
-    height: 40vh;
-    border: 1px solid rgb(196, 195, 195);
-    box-shadow: 5px 5px 5px rgb(119, 119, 119);
-
+    background-color: #f0f0f0;
 }
+
+.main {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    width: 30vw;
+    min-width: 300px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .form-group {
@@ -46,11 +48,13 @@ body {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #555;
 }
 
 .form-control {
-    width: calc(100% - 1rem);
-    padding: 0.375rem 0.75rem;
+    width: 100%;
+    padding: 0.5rem;
     font-size: 1rem;
     line-height: 1.5;
     color: #495057;
@@ -68,8 +72,8 @@ body {
 
 .btn {
     display: inline-block;
-    font-weight: 400;
-    padding: 0.375rem 0.75rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0.25rem;
