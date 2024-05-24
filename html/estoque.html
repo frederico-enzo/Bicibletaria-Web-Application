@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/estoque.css">
@@ -15,7 +13,6 @@
 
 <body>
     <div class="grid-container">
-
         <header class="header">
             <div class="menu-icon">
                 <span class="material-icons-outlined">menu</span>
@@ -36,7 +33,6 @@
                 </div>
                 <span class="material-icons-outlined">fechar</span>
             </div>
-
             <ul class="sidebar-list">
                 <li class="sidebar-list-item">
                     <a href="dashboard.html">
@@ -67,10 +63,10 @@
                     <a href="../html/ordem-de-servico.html">
                         <span class="material-icons-outlined">build</span> Ordens de Serviço
                     </a>
+                </li>
             </ul>
         </aside>
-
-        <main class="main-container">
+        <main class="main-container service-order">
             <div class="form-container">
                 <h3>Adicionar Venda</h3>
                 <form id="salesForm" data-row-index="">
@@ -111,18 +107,41 @@
                         </tr>
                     </thead>
                     <tbody>
-
                     </tbody>
                 </table>
             </div>
         </main>
-
-
     </div>
-
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Editar Venda</h2>
+            <form id="edit-sales-form">
+                <div>
+                    <label for="edit-sale-date">Data da Venda:</label>
+                    <input type="date" id="edit-sale-date" name="edit-sale-date" required>
+                </div>
+                <div>
+                    <label for="edit-item-sold">Item Vendido:</label>
+                    <input type="text" id="edit-item-sold" name="edit-item-sold" required>
+                </div>
+                <div>
+                    <label for="edit-description">Descrição:</label>
+                    <input type="text" id="edit-description" name="edit-description" required>
+                </div>
+                <div>
+                    <label for="edit-seller">Vendedor(a):</label>
+                    <input type="text" id="edit-seller" name="edit-seller" required>
+                </div>
+                <div>
+                    <label for="edit-payment-method">Forma de Pagamento:</label>
+                    <input type="text" id="edit-payment-method" name="edit-payment-method" required>
+                </div>
+                <button type="submit">Salvar Alterações</button>
+            </form>
+        </div>
     </div>
     <script src="../javascript/estoque.js"></script>
-
 </body>
 
 </html>

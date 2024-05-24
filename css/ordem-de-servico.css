@@ -138,9 +138,116 @@ body {
 }
 
 /* Main Content */
+.main-container {
+    grid-area: main;
+    padding: 0 5vw;
+}
+
+.main-title {
+    margin-bottom: 30px;
+}
+.service-order {
+    padding: 20px;
+}
+
+.service-order h1,
+.service-order h2 {
+    color: rgb(29, 38, 154);
+}
+
+#service-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+#service-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+#service-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#service-form input,
+#service-form select {
+    padding: 10px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+}
+
+#service-form button {
+    margin-top: 23px;
+    grid-column: span 1;
+    height: 40PX;
+    padding: 15px;
+    background-color: rgb(46, 125, 50);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#service-form button:hover {
+    background-color: rgb(43, 117, 46);
+}
+
+#service-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#service-list th,
+#service-list td {
+    
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+#service-list th {
+    background-color: rgb(29, 38, 154);
+    color: white;
+}
 
 
 
+
+
+#service-list button:hover {
+    background-color: rgb(35, 93, 38);
+}
+  
+.btn-warning {
+    margin-top: 23px;
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(230, 221, 109);
+    border: 1px solid rgb(255, 238, 0);
+} 
+
+.btn-success {
+    margin-top: 23px;
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(43, 117, 46);
+    border: 1px solid rgb(43, 117, 46);
+}
 
 /* Small <= 768px */
 @media screen and (max-width: 768px) {
@@ -161,4 +268,89 @@ body {
     .header-left {
         display: none;
     }
+}
+
+ /* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#edit-service-form div {
+    margin-bottom: 15px;
+}
+
+#edit-service-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+}
+
+#edit-service-form input,
+#edit-service-form select {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#edit-service-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(46, 125, 50);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#edit-service-form button:hover {
+    background-color: rgb(60, 161, 65);
 }

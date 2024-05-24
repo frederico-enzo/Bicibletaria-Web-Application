@@ -69,15 +69,77 @@
                     </a>
             </ul>
         </aside>
-
         <main class="main-container">
-        
+            <div class="service-order">
+                <h1>Ordem de Serviços</h1>
+                <form id="service-form">
+                    <div class="form-group">
+                        <label for="service-description">Descrição do Serviço:</label>
+                        <input type="text" id="service-description" name="service-description" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-date">Data:</label>
+                        <input type="date" id="service-date" name="service-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-status">Status:</label>
+                        <select id="service-status" name="service-status" required>
+                            <option value="Pendente">Pendente</option>
+                            <option value="Em Andamento">Em Andamento</option>
+                            <option value="Concluído">Concluído</option>
+                        </select>
+                    </div>
+                    <button type="submit">Cadastrar Serviço</button>
+                    <button type="button" id="update-button" style="display: none;">Atualizar Serviço</button>
+                </form>
+
+                <h2>Serviços Cadastrados</h2>
+                <table id="service-list">
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th>Data</th>
+                            <th>Status</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Serviços cadastrados vão aparecer aqui -->
+                    </tbody>
+                </table>
+            </div>
         </main>
     </div>
 
     </div>
-    <script src="../javascript/index.js"></script>
-    <script src="../javascript/renderizar.js"></script>
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Editar Serviço</h2>
+            <form id="edit-service-form">
+                <div>
+                    <label for="edit-service-description">Descrição do Serviço:</label>
+                    <input type="text" id="edit-service-description" name="edit-service-description" required>
+                </div>
+                <div>
+                    <label for="edit-service-date">Data:</label>
+                    <input type="date" id="edit-service-date" name="edit-service-date" required>
+                </div>
+                <div>
+                    <label for="edit-service-status">Status:</label>
+                    <select id="edit-service-status" name="edit-service-status" required>
+                        <option value="Pendente">Pendente</option>
+                        <option value="Em Andamento">Em Andamento</option>
+                        <option value="Concluído">Concluído</option>
+                    </select>
+                </div>
+                <button type="submit">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+
+    </div>
+    <script src="../javascript/ordem-servico.js"></script>
 
 </body>
 
