@@ -74,29 +74,41 @@
                 <h2>Carrinho de Vendas</h2>
             </div>
 
+            <div id="produtos-container" class="products-container">
             <div class="cart-items">
-                <!-- Aqui serão exibidos os itens do carrinho -->
                 <div class="cart-item">
-                    <img src="../images/product1.jpg" alt="Produto 1">
+                    <img src="https://images.tcdn.com.br/img/img_prod/394779/bicicleta_feminina_gts_aro_29_freio_a_disco_cambio_gtsm1_mx8_24_marchas_e_amortecedor_gts_m1_ride_fe_1017_variacao_6300_2_cd285db44aaafcd4815fad90c5e746d4.jpg"
+                        alt="Produto 1">
                     <div class="item-info">
                         <h3>Descrição do Produto 1</h3>
                         <p>Valor: R$ 99,99</p>
+                        <div class="d-flex">
+                            <div class="quantity-controls">
+                                <button class="quantity-decrement">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-increment">+</button>
+                            </div>
+                        </div>
                     </div>
-                    <button class="remove-from-cart">Remover</button>
+                    <div class="d-flex">
+                        <button class="remove-from-cart">Remover</button>
+                    </div>
                 </div>
-
-                <!-- Adicione mais itens conforme necessário -->
             </div>
+            
+        
+    y
+        </div>
 
             <div class="cart-total">
-                <h3>Total: R$ 99,99</h3>
+                <h3>Total: R$ <span id="total-value">99,99</span></h3>
                 <button class="checkout">Finalizar Compra</button>
             </div>
         </main>
     </div>
 
     </div>
-    <script src="../javascript/index.js"></script>
+    <script src="../javascript/carrinho.js"></script>
 </body>
 
 </html>
