@@ -150,10 +150,6 @@ body {
     padding: 20px;
 }
 
-.service-order h1,
-.service-order h2 {
-    color: rgb(29, 38, 154);
-}
 
 #service-form {
     display: grid;
